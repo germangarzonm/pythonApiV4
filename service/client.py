@@ -9,14 +9,16 @@ class Client():
         self.preexistence = []
 
     def add_preexistence(self, n_Preexistence):
+        ---Adds a preexistence to a client---
         self.preexistence.append(n_Preexistence)
         return len(self.preexistence) - 1
 
     def get_preexistence(self, p_Index):
+        ---Adds a preexistence to a client---
         if p_Index >= len(self.preexistence):
             return 'There is no such preexistence'
-        else:
-            return self.preexistence[p_Index]
+        
+        return self.preexistence[p_Index]
 
     def get_all_preexistence(self):
         return self.preexistence
